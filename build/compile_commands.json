@@ -1,0 +1,12 @@
+[
+  {
+    "directory": "/home/zhenke/code/learn-opengl/build",
+    "command": "cc -Isubprojects/glad/subprojects@glad@@glad@sha -Isubprojects/glad -I../subprojects/glad -I../subprojects/glad/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O0 -g -fPIC  -MD -MQ 'subprojects/glad/subprojects@glad@@glad@sha/src_glad.c.o' -MF 'subprojects/glad/subprojects@glad@@glad@sha/src_glad.c.o.d' -o 'subprojects/glad/subprojects@glad@@glad@sha/src_glad.c.o' -c ../subprojects/glad/src/glad.c",
+    "file": "../subprojects/glad/src/glad.c"
+  },
+  {
+    "directory": "/home/zhenke/code/learn-opengl/build",
+    "command": "c++ -Isrc/1.getting_started/src@1.getting_started@@hello_world_clear@exe -Isrc/1.getting_started -I../src/1.getting_started -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread  -MD -MQ 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o' -MF 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o.d' -o 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o' -c ../src/1.getting_started/1.2.helloworld_clear/hello_world_clear.cpp",
+    "file": "../src/1.getting_started/1.2.helloworld_clear/hello_world_clear.cpp"
+  }
+]

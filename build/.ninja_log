@@ -1,0 +1,17 @@
+# ninja log v5
+0	264	1525317729	subprojects/glad/subprojects@glad@@glad@sha/src_glad.c.o	e404d68846253f18
+268	337	1525317729	subprojects/glad/libglad.so	e42acccc97e2a84e
+0	691	1525317729	src/src@@hello_world_clear@exe/1.getting_started_1.2.helloworld_clear_hello_world_clear.cpp.o	2089379dc034110c
+338	750	1525317729	subprojects/glad/subprojects@glad@@glad@sha/libglad.so.symbols	6366d0a7155a5fd7
+750	994	1525317729	src/hello_world_clear	acf3176bbf63f592
+0	538	1525317830	build.ninja	b0f4bef697eae9fe
+1	627	1525317831	src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o	b103c539a4ac2f1c
+627	872	1525317831	src/1.getting_started/hello_world_clear	852351a45bb73c55
+0	487	1525320361	build.ninja	b0f4bef697eae9fe
+1	633	1525320362	src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o	ecd9763f954b403b
+633	880	1525320362	src/1.getting_started/hello_world_clear	9413b98e964363fe
+0	4178	1525419062	build.ninja	b0f4bef697eae9fe
+136	2934	1525419065	src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o	c9ae3b01467dc1e2
+0	461	1525419130	build.ninja	b0f4bef697eae9fe
+2	617	1525419131	src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o	c031c22f1989d1c6
+618	887	1525419131	src/1.getting_started/hello_world_clear	a7c2d43819d56b76

@@ -21,4 +21,9 @@ if [ -z "$RAILS_ENV" ] && [ -z "$RACK_ENV" ]; then
   true
 fi
 
+if [ -f "/etc/arch-release" ]; then
+  echo "==> Installing pacman dependencies…"
+  sudo pacman -S --noconfirm --quiet --needed glfw-doc glfw-wayland # for old system: glfw-x11
+fi
+
 echo "==> App is now ready to go!"

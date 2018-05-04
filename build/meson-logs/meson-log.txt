@@ -1,0 +1,48 @@
+Build started at 2018-05-04T15:32:10.798855
+Main binary: /usr/bin/python
+Python system: Linux
+The Meson build system
+Version: 0.46.0
+Source dir: /home/zhenke/code/learn-opengl
+Build dir: /home/zhenke/code/learn-opengl/build
+Build type: native build
+Project name: learn-opengl
+Native C++ compiler: c++ (gcc 7.3.1 "c++ (GCC) 7.3.1 20180406")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Dependency gl found: YES (cached)
+
+
+Executing subproject glad.
+
+Project name: glad
+Native C compiler: cc (gcc 7.3.1 "cc (GCC) 7.3.1 20180406")
+Running compile:
+Working directory:  /tmp/tmplfp8_xy6
+Command line:  cc /tmp/tmplfp8_xy6/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmplfp8_xy6/output.exe -O0 -Wl,--start-group -ldl -Wl,--end-group 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+Build targets in project: 1
+
+Subproject glad finished.
+Dependency glfw3 found: YES (cached)
+Dependency x11 found: YES (cached)
+Dependency threads found: YES (cached)
+Using cached compile:
+Cached command line:  cc /tmp/tmplfp8_xy6/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmplfp8_xy6/output.exe -O0 -Wl,--start-group -ldl -Wl,--end-group 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Library dl found: YES
+Build targets in project: 2
+Found ninja-1.8.2 at /usr/bin/ninja

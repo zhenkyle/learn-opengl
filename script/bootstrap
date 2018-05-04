@@ -29,3 +29,8 @@ if [ -f "Gemfile" ]; then
     bundle install --path vendor/gems --quiet --without production
   }
 fi
+
+if [ -f "/etc/arch-release" ]; then
+  echo "==> Installing pacman dependencies…"
+  sudo pacman -S --noconfirm --quiet base-devel
+fi
