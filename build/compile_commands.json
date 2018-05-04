@@ -6,7 +6,12 @@
   },
   {
     "directory": "/home/zhenke/code/learn-opengl/build",
-    "command": "c++ -Isrc/1.getting_started/src@1.getting_started@@hello_world_clear@exe -Isrc/1.getting_started -I../src/1.getting_started -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread  -MD -MQ 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o' -MF 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o.d' -o 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o' -c ../src/1.getting_started/1.2.helloworld_clear/hello_world_clear.cpp",
+    "command": "c++ -Isrc/1.getting_started/src@1.getting_started@@hello_world_clear@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread  -MD -MQ 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o' -MF 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o.d' -o 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o' -c ../src/1.getting_started/1.2.helloworld_clear/hello_world_clear.cpp",
     "file": "../src/1.getting_started/1.2.helloworld_clear/hello_world_clear.cpp"
+  },
+  {
+    "directory": "/home/zhenke/code/learn-opengl/build",
+    "command": "c++ -Isrc/1.getting_started/src@1.getting_started@@shaders_class@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread  -MD -MQ 'src/1.getting_started/src@1.getting_started@@shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o' -MF 'src/1.getting_started/src@1.getting_started@@shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o.d' -o 'src/1.getting_started/src@1.getting_started@@shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o' -c ../src/1.getting_started/3.3.shaders_class/shaders_class.cpp",
+    "file": "../src/1.getting_started/3.3.shaders_class/shaders_class.cpp"
   }
 ]

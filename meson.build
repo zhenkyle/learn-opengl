@@ -10,7 +10,12 @@ glad = glad_sp.get_variable('glad_dep')
 x11 = dependency('x11')
 threads = dependency('threads')
 
-cc = meson.get_compiler('c') 
+cc = meson.get_compiler('c')
 dl = cc.find_library('dl', required : false)
+
+my_dep = [gl,glfw3,glad,dl,x11,threads]
+
+subdir('includes')
+my_inc = [inc]
 
 subdir('src')

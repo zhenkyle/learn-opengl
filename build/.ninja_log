@@ -15,3 +15,13 @@
 0	461	1525419130	build.ninja	b0f4bef697eae9fe
 2	617	1525419131	src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o	c031c22f1989d1c6
 618	887	1525419131	src/1.getting_started/hello_world_clear	a7c2d43819d56b76
+0	456	1525421014	build.ninja	b0f4bef697eae9fe
+1	612	1525421015	src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o	d3b037606097dcdd
+612	859	1525421015	src/1.getting_started/hello_world_clear	a7c2d43819d56b76
+0	473	1525421059	build.ninja	b0f4bef697eae9fe
+1	966	1525421060	src/1.getting_started/src@1.getting_started@@shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o	ae64c2df67e952a4
+966	1211	1525421060	src/1.getting_started/shaders_class	dbf7c35457c6678a
+0	471	1525421420	build.ninja	b0f4bef697eae9fe
+0	485	1525421541	build.ninja	b0f4bef697eae9fe
+0	474	1525421580	build.ninja	b0f4bef697eae9fe
+0	485	1525422125	build.ninja	b0f4bef697eae9fe
