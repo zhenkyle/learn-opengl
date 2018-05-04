@@ -6,12 +6,22 @@
   },
   {
     "directory": "/home/zhenke/code/learn-opengl/build",
-    "command": "c++ -Isrc/1.getting_started/src@1.getting_started@@hello_world_clear@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread  -MD -MQ 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o' -MF 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o.d' -o 'src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o' -c ../src/1.getting_started/1.2.helloworld_clear/hello_world_clear.cpp",
+    "command": "c++ -Isrc/src@@stb_image@sha -Isrc -I../src -Iincludes -I../includes -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -fPIC  -MD -MQ 'src/src@@stb_image@sha/stb_image.cpp.o' -MF 'src/src@@stb_image@sha/stb_image.cpp.o.d' -o 'src/src@@stb_image@sha/stb_image.cpp.o' -c ../src/stb_image.cpp",
+    "file": "../src/stb_image.cpp"
+  },
+  {
+    "directory": "/home/zhenke/code/learn-opengl/build",
+    "command": "c++ -Isrc/1.getting_started/src@1.getting_started@@1.2.hello_world_clear@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -Iconfiguration -I../configuration -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread  -MD -MQ 'src/1.getting_started/src@1.getting_started@@1.2.hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o' -MF 'src/1.getting_started/src@1.getting_started@@1.2.hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o.d' -o 'src/1.getting_started/src@1.getting_started@@1.2.hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o' -c ../src/1.getting_started/1.2.helloworld_clear/hello_world_clear.cpp",
     "file": "../src/1.getting_started/1.2.helloworld_clear/hello_world_clear.cpp"
   },
   {
     "directory": "/home/zhenke/code/learn-opengl/build",
-    "command": "c++ -Isrc/1.getting_started/src@1.getting_started@@shaders_class@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread  -MD -MQ 'src/1.getting_started/src@1.getting_started@@shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o' -MF 'src/1.getting_started/src@1.getting_started@@shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o.d' -o 'src/1.getting_started/src@1.getting_started@@shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o' -c ../src/1.getting_started/3.3.shaders_class/shaders_class.cpp",
+    "command": "c++ -Isrc/1.getting_started/src@1.getting_started@@3.3.shaders_class@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -Iconfiguration -I../configuration -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread  -MD -MQ 'src/1.getting_started/src@1.getting_started@@3.3.shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o' -MF 'src/1.getting_started/src@1.getting_started@@3.3.shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o.d' -o 'src/1.getting_started/src@1.getting_started@@3.3.shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o' -c ../src/1.getting_started/3.3.shaders_class/shaders_class.cpp",
     "file": "../src/1.getting_started/3.3.shaders_class/shaders_class.cpp"
+  },
+  {
+    "directory": "/home/zhenke/code/learn-opengl/build",
+    "command": "c++ -Isrc/1.getting_started/src@1.getting_started@@4.2.textures_combined@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -Iconfiguration -I../configuration -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread  -MD -MQ 'src/1.getting_started/src@1.getting_started@@4.2.textures_combined@exe/4.2.textures_combined_textures_combined.cpp.o' -MF 'src/1.getting_started/src@1.getting_started@@4.2.textures_combined@exe/4.2.textures_combined_textures_combined.cpp.o.d' -o 'src/1.getting_started/src@1.getting_started@@4.2.textures_combined@exe/4.2.textures_combined_textures_combined.cpp.o' -c ../src/1.getting_started/4.2.textures_combined/textures_combined.cpp",
+    "file": "../src/1.getting_started/4.2.textures_combined/textures_combined.cpp"
   }
 ]

@@ -18,4 +18,7 @@ my_dep = [gl,glfw3,glad,dl,x11,threads]
 subdir('includes')
 my_inc = [inc]
 
+subdir('configuration')
+my_inc += conf
+
 subdir('src')

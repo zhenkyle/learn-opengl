@@ -85,19 +85,35 @@ build subprojects/glad/subprojects@glad@@glad@sha/libglad.so.symbols: SHSYM subp
 build subprojects/glad/libglad.so: c_LINKER subprojects/glad/subprojects@glad@@glad@sha/src_glad.c.o | /usr/lib/libdl-2.27.so /usr/lib/libdl.a
  LINK_ARGS = -Wl,--no-undefined -Wl,--as-needed -shared -fPIC -Wl,--start-group -Wl,-soname,libglad.so -ldl -Wl,--end-group
 
-build src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o: cpp_COMPILER ../src/1.getting_started/1.2.helloworld_clear/hello_world_clear.cpp
- DEPFILE = src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o.d
- ARGS = -Isrc/1.getting_started/src@1.getting_started@@hello_world_clear@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread
+build src/src@@stb_image@sha/stb_image.cpp.o: cpp_COMPILER ../src/stb_image.cpp
+ DEPFILE = src/src@@stb_image@sha/stb_image.cpp.o.d
+ ARGS = -Isrc/src@@stb_image@sha -Isrc -I../src -Iincludes -I../includes -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -fPIC
 
-build src/1.getting_started/hello_world_clear: cpp_LINKER src/1.getting_started/src@1.getting_started@@hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o | /usr/lib/libX11.so.6.3.0 /usr/lib/libGL.so.1.0.0 subprojects/glad/subprojects@glad@@glad@sha/libglad.so.symbols /usr/local/lib/libglfw3.a /usr/lib/libdl-2.27.so /usr/lib/libdl.a
- LINK_ARGS = -Wl,--no-undefined -Wl,--as-needed -Wl,--start-group subprojects/glad/libglad.so -pthread -lGL -L/usr/local/lib -lglfw3 -ldl -lX11 -Wl,--end-group '-Wl,-rpath,$$ORIGIN/../../subprojects/glad' -Wl,-rpath-link,/home/zhenke/code/learn-opengl/build/subprojects/glad
+build src/src@@stb_image@sha/libstb_image.so.symbols: SHSYM src/libstb_image.so
 
-build src/1.getting_started/src@1.getting_started@@shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o: cpp_COMPILER ../src/1.getting_started/3.3.shaders_class/shaders_class.cpp
- DEPFILE = src/1.getting_started/src@1.getting_started@@shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o.d
- ARGS = -Isrc/1.getting_started/src@1.getting_started@@shaders_class@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread
+build src/libstb_image.so: cpp_LINKER src/src@@stb_image@sha/stb_image.cpp.o
+ LINK_ARGS = -Wl,--no-undefined -Wl,--as-needed -shared -fPIC -Wl,--start-group -Wl,-soname,libstb_image.so -Wl,--end-group
 
-build src/1.getting_started/shaders_class: cpp_LINKER src/1.getting_started/src@1.getting_started@@shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o | /usr/lib/libX11.so.6.3.0 /usr/lib/libGL.so.1.0.0 subprojects/glad/subprojects@glad@@glad@sha/libglad.so.symbols /usr/local/lib/libglfw3.a /usr/lib/libdl-2.27.so /usr/lib/libdl.a
- LINK_ARGS = -Wl,--no-undefined -Wl,--as-needed -Wl,--start-group subprojects/glad/libglad.so -pthread -lGL -L/usr/local/lib -lglfw3 -ldl -lX11 -Wl,--end-group '-Wl,-rpath,$$ORIGIN/../../subprojects/glad' -Wl,-rpath-link,/home/zhenke/code/learn-opengl/build/subprojects/glad
+build src/1.getting_started/src@1.getting_started@@1.2.hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o: cpp_COMPILER ../src/1.getting_started/1.2.helloworld_clear/hello_world_clear.cpp
+ DEPFILE = src/1.getting_started/src@1.getting_started@@1.2.hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o.d
+ ARGS = -Isrc/1.getting_started/src@1.getting_started@@1.2.hello_world_clear@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -Iconfiguration -I../configuration -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread
+
+build src/1.getting_started/1.2.hello_world_clear: cpp_LINKER src/1.getting_started/src@1.getting_started@@1.2.hello_world_clear@exe/1.2.helloworld_clear_hello_world_clear.cpp.o | /usr/local/lib/libglfw3.a /usr/lib/libdl.a src/src@@stb_image@sha/libstb_image.so.symbols /usr/lib/libGL.so.1.0.0 subprojects/glad/subprojects@glad@@glad@sha/libglad.so.symbols /usr/lib/libdl-2.27.so /usr/lib/libX11.so.6.3.0
+ LINK_ARGS = -Wl,--no-undefined -Wl,--as-needed -Wl,--start-group subprojects/glad/libglad.so src/libstb_image.so -pthread -lGL -L/usr/local/lib -lglfw3 -ldl -lX11 -Wl,--end-group '-Wl,-rpath,$$ORIGIN/../../subprojects/glad:$$ORIGIN/..' -Wl,-rpath-link,/home/zhenke/code/learn-opengl/build/subprojects/glad:/home/zhenke/code/learn-opengl/build/src
+
+build src/1.getting_started/src@1.getting_started@@3.3.shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o: cpp_COMPILER ../src/1.getting_started/3.3.shaders_class/shaders_class.cpp
+ DEPFILE = src/1.getting_started/src@1.getting_started@@3.3.shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o.d
+ ARGS = -Isrc/1.getting_started/src@1.getting_started@@3.3.shaders_class@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -Iconfiguration -I../configuration -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread
+
+build src/1.getting_started/3.3.shaders_class: cpp_LINKER src/1.getting_started/src@1.getting_started@@3.3.shaders_class@exe/3.3.shaders_class_shaders_class.cpp.o | /usr/local/lib/libglfw3.a /usr/lib/libdl.a src/src@@stb_image@sha/libstb_image.so.symbols /usr/lib/libGL.so.1.0.0 subprojects/glad/subprojects@glad@@glad@sha/libglad.so.symbols /usr/lib/libdl-2.27.so /usr/lib/libX11.so.6.3.0
+ LINK_ARGS = -Wl,--no-undefined -Wl,--as-needed -Wl,--start-group subprojects/glad/libglad.so src/libstb_image.so -pthread -lGL -L/usr/local/lib -lglfw3 -ldl -lX11 -Wl,--end-group '-Wl,-rpath,$$ORIGIN/../../subprojects/glad:$$ORIGIN/..' -Wl,-rpath-link,/home/zhenke/code/learn-opengl/build/subprojects/glad:/home/zhenke/code/learn-opengl/build/src
+
+build src/1.getting_started/src@1.getting_started@@4.2.textures_combined@exe/4.2.textures_combined_textures_combined.cpp.o: cpp_COMPILER ../src/1.getting_started/4.2.textures_combined/textures_combined.cpp
+ DEPFILE = src/1.getting_started/src@1.getting_started@@4.2.textures_combined@exe/4.2.textures_combined_textures_combined.cpp.o.d
+ ARGS = -Isrc/1.getting_started/src@1.getting_started@@4.2.textures_combined@exe -Isrc/1.getting_started -I../src/1.getting_started -Iincludes -I../includes -Iconfiguration -I../configuration -I../subprojects/glad/include -I/usr/include/libdrm -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -pthread
+
+build src/1.getting_started/4.2.textures_combined: cpp_LINKER src/1.getting_started/src@1.getting_started@@4.2.textures_combined@exe/4.2.textures_combined_textures_combined.cpp.o | /usr/local/lib/libglfw3.a /usr/lib/libdl.a src/src@@stb_image@sha/libstb_image.so.symbols /usr/lib/libGL.so.1.0.0 subprojects/glad/subprojects@glad@@glad@sha/libglad.so.symbols /usr/lib/libdl-2.27.so /usr/lib/libX11.so.6.3.0
+ LINK_ARGS = -Wl,--no-undefined -Wl,--as-needed -Wl,--start-group subprojects/glad/libglad.so src/libstb_image.so -pthread -lGL -L/usr/local/lib -lglfw3 -ldl -lX11 -Wl,--end-group '-Wl,-rpath,$$ORIGIN/../../subprojects/glad:$$ORIGIN/..' -Wl,-rpath-link,/home/zhenke/code/learn-opengl/build/subprojects/glad:/home/zhenke/code/learn-opengl/build/src
 
 # Test rules
 
@@ -145,7 +161,7 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony subprojects/glad/libglad.so src/1.getting_started/hello_world_clear src/1.getting_started/shaders_class
+build all: phony subprojects/glad/libglad.so src/libstb_image.so src/1.getting_started/1.2.hello_world_clear src/1.getting_started/3.3.shaders_class src/1.getting_started/4.2.textures_combined
 
 default all
 
@@ -155,11 +171,11 @@ build meson-clean: CUSTOM_COMMAND PHONY
  COMMAND = ninja -t clean
  description = Cleaning.
 
-build build.ninja: REGENERATE_BUILD ../meson.build ../subprojects/glad/meson.build ../includes/meson.build ../src/meson.build ../src/1.getting_started/meson.build ../src/1.getting_started/3.3.shaders_class/3.3.shader.fs ../src/1.getting_started/3.3.shaders_class/3.3.shader.vs meson-private/coredata.dat
+build build.ninja: REGENERATE_BUILD ../meson.build ../subprojects/glad/meson.build ../includes/meson.build ../configuration/meson.build ../configuration/root_directory.h.in ../src/meson.build ../src/1.getting_started/meson.build ../src/1.getting_started/3.3.shaders_class/3.3.shader.fs ../src/1.getting_started/3.3.shaders_class/3.3.shader.vs ../src/1.getting_started/4.2.textures_combined/4.2.texture.fs ../src/1.getting_started/4.2.textures_combined/4.2.texture.vs meson-private/coredata.dat
  pool = console
 
 build reconfigure: REGENERATE_BUILD PHONY
  pool = console
 
-build ../meson.build ../subprojects/glad/meson.build ../includes/meson.build ../src/meson.build ../src/1.getting_started/meson.build ../src/1.getting_started/3.3.shaders_class/3.3.shader.fs ../src/1.getting_started/3.3.shaders_class/3.3.shader.vs meson-private/coredata.dat: phony 
+build ../meson.build ../subprojects/glad/meson.build ../includes/meson.build ../configuration/meson.build ../configuration/root_directory.h.in ../src/meson.build ../src/1.getting_started/meson.build ../src/1.getting_started/3.3.shaders_class/3.3.shader.fs ../src/1.getting_started/3.3.shaders_class/3.3.shader.vs ../src/1.getting_started/4.2.textures_combined/4.2.texture.fs ../src/1.getting_started/4.2.textures_combined/4.2.texture.vs meson-private/coredata.dat: phony 
 
