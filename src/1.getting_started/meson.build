@@ -31,3 +31,17 @@ configure_file(input: '4.2.textures_combined/4.2.texture.fs',
 configure_file(input: '4.2.textures_combined/4.2.texture.vs',
                output: '4.2.texture.vs',
                configuration : conf_data)
+
+executable('5.1.transformations'
+	,'5.1.transformations/transformations.cpp'
+	,dependencies : my_dep
+	,include_directories : my_inc
+)
+
+conf_data = configuration_data()
+configure_file(input: '5.1.transformations/5.1.transform.fs',
+               output: '5.1.transform.fs',
+               configuration : conf_data)
+configure_file(input: '5.1.transformations/5.1.transform.vs',
+               output: '5.1.transform.vs',
+               configuration : conf_data)

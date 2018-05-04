@@ -32,5 +32,5 @@ fi
 
 if [ -f "/etc/arch-release" ]; then
   echo "==> Installing pacman dependencies…"
-  sudo pacman -S --noconfirm --quiet base-devel
+  sudo pacman -S --noconfirm --quiet --needed base-devel
 fi
